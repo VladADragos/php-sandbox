@@ -1,0 +1,119 @@
+.navbar {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 3px;
+  margin-top: 2vh; }
+  .navbar__header__text {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: auto 2rem;
+    letter-spacing: 0.1em;
+    padding: 0.1em 0em; }
+  .navbar__list {
+    display: flex;
+    flex-direction: row;
+    margin: auto 2rem; }
+    .navbar__list__item {
+      border-bottom: 3px solid #f2f2f2;
+      margin: 0.6rem;
+      font-weight: 400;
+      font-size: 1.5rem;
+      letter-spacing: 0.1em; }
+      .navbar__list__item:hover {
+        border-bottom: 3px solid #04224a; }
+        .navbar__list__item:hover a {
+          color: #04224a; }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: 0px; }
+
+ul {
+  list-style: none; }
+
+svg {
+  height: 3vh;
+  width: 3vh;
+  padding: 1.1em; }
+
+a,
+h1,
+h2,
+h3,
+i,
+p {
+  text-decoration: none;
+  color: #707070; }
+
+body {
+  font-size: 62.5%;
+  color: black;
+  text-decoration: none;
+  background-image: linear-gradient(#9dabbf, #04224a);
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  height: 100vh; }
+
+.main {
+  margin-top: 5vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 6em; }
+  .main__panel__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4vh 6em; }
+
+.panel {
+  background: #f2f2f2;
+  border-radius: 2px;
+  height: 37vh;
+  text-align: center; }
+  .panel--long {
+    height: 78vh; }
+  .panel h2 {
+    font-size: 2.8em;
+    font-weight: 500; }
+  .panel__inner {
+    width: 70%;
+    margin: 1.3vh auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr; }
+    .panel__inner--left {
+      margin-left: 0.5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: left; }
+      .panel__inner--left h3 {
+        letter-spacing: 0.2em;
+        font-weight: 600;
+        font-size: 1.5em; }
+      .panel__inner--left p {
+        font-size: 1.2em;
+        font-weight: 700; }
+    .panel__inner--right {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .panel__inner--right p {
+        font-size: 1.2em;
+        font-weight: 600; }
+      .panel__inner--right i {
+        margin-top: 0.4vh;
+        font-size: 1.5em; }
+
+.svg-container {
+  border-radius: 20px;
+  border: solid 0.4em #d6d6d6; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+.navbar {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 3px;
+  margin-top: 2vh;
+  &__header {
+    &__text {
+      font-size: 3rem;
+      font-weight: 400;
+      margin: auto 2rem;
+      letter-spacing: 0.1em;
+      padding: 0.1em 0em;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    margin: auto 2rem;
+
+    &__item {
+      border-bottom: 3px solid #f2f2f2;
+      margin: 0.6rem;
+      font-weight: 400;
+      font-size: 1.5rem;
+      letter-spacing: 0.1em;
+      &:hover {
+        border-bottom: 3px solid #04224a;
+        a {
+          color: #04224a;
+        }
+      }
+    }
+  }
+}
