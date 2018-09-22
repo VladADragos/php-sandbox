@@ -59,7 +59,18 @@ body {
 .container {
   width: 80%;
   margin: auto;
-  height: 100vh; }
+  height: 98vh; }
+
+input,
+select {
+  width: 5vw;
+  font-size: 1rem;
+  color: #707070;
+  background-color: #fff;
+  border: #d6d6d6 0.2rem solid; }
+  input option,
+  select option {
+    width: 6vw; }
 
 .main {
   margin-top: 5vh;
@@ -78,7 +89,8 @@ body {
   height: 37vh;
   text-align: center; }
   .panel--long {
-    height: 78vh; }
+    height: 78vh;
+    overflow-y: auto; }
   .panel h2 {
     font-size: 2.8em;
     font-weight: 500; }
@@ -86,7 +98,8 @@ body {
     width: 70%;
     margin: 1.3vh auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr; }
+    grid-template-columns: 1fr 2fr 2fr;
+    position: relative; }
     .panel__inner--left {
       margin-left: 0.5vh;
       display: flex;
@@ -105,12 +118,25 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-around; }
+      .panel__inner--right .delete {
+        border: none;
+        background: none; }
       .panel__inner--right p {
         font-size: 1.2em;
         font-weight: 600; }
       .panel__inner--right i {
         margin-top: 0.4vh;
         font-size: 1.5em; }
+    .panel__inner .buttons {
+      display: none;
+      width: 3vw;
+      flex-direction: row;
+      justify-content: space-evenly;
+      position: absolute;
+      top: 60%;
+      right: 15%; }
+      .panel__inner .buttons input {
+        width: 3vw; }
 
 .svg-container {
   border-radius: 20px;

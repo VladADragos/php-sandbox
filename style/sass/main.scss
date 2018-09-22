@@ -34,74 +34,18 @@ body {
 .container {
   width: 80%;
   margin: auto;
-  height: 100vh;
+  height: 98vh;
 }
-.main {
-  margin-top: 5vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-column-gap: 6em;
-  &__panel__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4vh 6em;
+
+input,
+select {
+  width: 5vw;
+  font-size: 1rem;
+  color: #707070;
+  background-color: #fff;
+  border: #d6d6d6 0.2rem solid;
+  option {
+    width: 6vw;
   }
 }
-.panel {
-  &--long {
-    height: 78vh;
-  }
-  background: #f2f2f2;
-  border-radius: 2px;
-  height: 37vh;
-
-  text-align: center;
-  h2 {
-    font-size: 2.8em;
-    font-weight: 500;
-  }
-  &__inner {
-    width: 70%;
-    margin: 1.3vh auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-
-    &--left {
-      margin-left: 0.5vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      h3 {
-        letter-spacing: 0.2em;
-        font-weight: 600;
-        font-size: 1.5em;
-      }
-      p {
-        font-size: 1.2em;
-        font-weight: 700;
-      }
-
-      text-align: left;
-    }
-    &--right {
-      text-align: right;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-
-      p {
-        font-size: 1.2em;
-        font-weight: 600;
-      }
-      i {
-        margin-top: 0.4vh;
-        font-size: 1.5em;
-      }
-    }
-  }
-}
-.svg-container {
-  border-radius: 20px;
-  border: solid 0.4em #d6d6d6;
-}
+@import "_panels";

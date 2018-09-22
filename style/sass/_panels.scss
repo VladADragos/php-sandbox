@@ -1,0 +1,90 @@
+.main {
+  margin-top: 5vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 6em;
+  &__panel__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4vh 6em;
+  }
+}
+.panel {
+  &--long {
+    height: 78vh;
+    overflow-y: auto;
+  }
+  background: #f2f2f2;
+  border-radius: 2px;
+  height: 37vh;
+
+  text-align: center;
+  h2 {
+    font-size: 2.8em;
+    font-weight: 500;
+  }
+  &__inner {
+    width: 70%;
+    margin: 1.3vh auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    position: relative;
+
+    &--left {
+      margin-left: 0.5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h3 {
+        letter-spacing: 0.2em;
+        font-weight: 600;
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 1.2em;
+        font-weight: 700;
+      }
+
+      text-align: left;
+    }
+    &--right {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .delete {
+        border: none;
+        background: none;
+      }
+
+      p {
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+      i {
+        margin-top: 0.4vh;
+        font-size: 1.5em;
+      }
+    }
+    .buttons {
+      display: none;
+
+      width: 3vw;
+      flex-direction: row;
+      justify-content: space-evenly;
+      position: absolute;
+      top: 60%;
+      right: 15%;
+
+      input {
+        width: 3vw;
+      }
+    }
+  }
+}
+.svg-container {
+  border-radius: 20px;
+  border: solid 0.4em #d6d6d6;
+}

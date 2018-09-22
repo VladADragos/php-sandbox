@@ -1,5 +1,5 @@
 <?php $stmt = $pdo->query("SELECT * FROM $days[$i] LIMIT 3"); ?>
-
+<?php include 'delete.php'?>
 <div class="panel ">
         <h2><?php echo $days[$i]?></h2>
         <?php while(($row = $stmt->fetch(PDO::FETCH_ASSOC))): ?>
@@ -16,7 +16,10 @@
                 <p>
                 <?php echo ($row['to']-$row['from']).' min'?>
                 </p>
-                <i class="fas fa-ellipsis-h"></i>
+                <a href="">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+               
             </div>
             
         </div>
