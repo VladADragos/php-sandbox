@@ -24,8 +24,23 @@
         </li>
         <li class="navbar__list__item">
             <a href="./">
-                Login
+                Profile
             </a>
         </li>
+        <li class="navbar__list__item">
+        <form action="<?php  $_SERVER['PHP_SELF']; ?>" method="POST">
+            <input type="submit" value="logout" name="logout">
+        </form>
+        </li>
+        
     </ul>
 </nav>
+
+<?php
+  
+
+  if (isset($_POST['logout'])) {
+    setcookie('isLogedIn',false,time()-3600);
+    
+  }
+?>

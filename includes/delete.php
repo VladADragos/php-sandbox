@@ -7,13 +7,14 @@ if(isset($_POST['deleteButton'])){
    
     
 
-    $query = "DELETE FROM monday WHERE id=$id";
+    $query = "DELETE FROM $days[$i] WHERE id=$id";
     $delete = new PDO($dsn,$user, $password);
     $delete->exec($query);
     
     
     
 }
+
 
 
 ?>

@@ -6,7 +6,9 @@
     <h2><?php echo $days[$i] ?></h2>
     
     <?php while(($row = $stmt->fetch(PDO::FETCH_ASSOC))): ?>
+        
             <div class="panel__inner" id="<?php echo 'edit'.$row['id']?>">
+            
                 <div class="svg-container">
                     <?php include './images/'.$row['activity'].'.svg'?>
                 </div>

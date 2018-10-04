@@ -37,15 +37,62 @@ body {
   height: 98vh;
 }
 
-input,
-select {
-  width: 5vw;
-  font-size: 1rem;
-  color: #707070;
-  background-color: #fff;
-  border: #d6d6d6 0.2rem solid;
-  option {
-    width: 6vw;
+@import "_panels";
+
+.login-background {
+  height: 100vh;
+  position: relative;
+  .form-container {
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    background: #9dabbf;
+    border-radius: 300vw;
+    border: floralwhite solid 0.7rem;
+    form {
+      padding: 7.4vw 6vw;
+      display: flex;
+      flex-direction: column;
+      width: 12vw;
+      color: #282828;
+      input {
+        width: 100%;
+        border: #04224a solid 0.2rem;
+        font-size: 1.8rem;
+      }
+      label {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+      }
+      .login-column {
+        display: flex;
+        flex-direction: column;
+      }
+      .login-row {
+        margin-top: 0.6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        input,
+        a {
+          font-size: 1.2rem;
+          border: #04224a solid 0.2rem;
+          width: 45%;
+          color: #282828;
+          background: #f3f3f3;
+          text-align: center;
+        }
+        input {
+          font-weight: bold;
+          background: #1e569e;
+          color: #f4f4f4;
+        }
+        p {
+          color: #282828;
+        }
+      }
+    }
   }
 }
-@import "_panels";

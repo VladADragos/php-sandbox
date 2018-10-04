@@ -24,6 +24,11 @@
             
         </div>
         <hr>
-        
     <?php endwhile; ?>
+    <?php include 'handleForm.php'?>
+        <form action="<?php  $_SERVER['PHP_SELF']; ?>" method="POST">
+        
+            <input type="text" name="id" style="display: none;" value="<?php echo $days[$i]?>">
+            <input type="submit" name="switch" value="view">
+        </form>
 </div>
